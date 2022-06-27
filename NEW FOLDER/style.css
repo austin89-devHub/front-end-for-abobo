@@ -1,0 +1,63 @@
+h1{
+
+    color: red;
+}
+
+h5{
+
+    color: green;
+    font-size: 70
+
+}
+
+h2{
+    color: red;
+}
+h3{
+    color: blue;
+}
+p{
+    color: green;
+}
+
+.family{
+    color: black;
+}
+
+.name{
+    color: yellowgreen;
+}
+.club{
+    color: purple;
+
+}
+.month{
+    color: black;
+}
+.para{
+    color: brown;
+}
+
+.box{
+    border: 3px solid red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 20px
+}
+
+
+.community{
+    color: darkgreen;
+}
+.note{
+    color: crimson;
+}
+
+.info{
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 20px
+}
