@@ -1,29 +1,34 @@
-// Arrays
+const express = require ("express")
 
-const colors = ['blue', 'red', 'yellow', 'pink', 'black']
-const numbers = [1, 2, 3, 4, 5]
-const place = ['rivers', 'bayelsa', 'kogi', 'benue', 'imo']
-const job = ['painter', 'driver', 'cubbler', 'artist', 'footballer']
-const salary = [1000, 2000, 3000, 4000, 5000]
+const app = express()
 
-// const newArr = colours.concat (numbers, place, job, salary)
 
-// console.log (colours, numbers, place, job, salary)
+app.listen(8000, ()=>{
+    console.log("Server has started listening")
+})
 
-// Loop through arrays
 
-for (let x =0; x < colors.length; x++){
-  console.log(colors[x])
-}
-for (let x =0; x < numbers.length; x++){
-  console.log(numbers[x])
-}
-for (let x =0; x < place.length; x++){
-  console.log(place[x])
-}
-for (let x =0; x < job.length; x++){
-  console.log(job[x])
-}
-for (let x =0; x <salary.length; x++){
-  console.log(salary[x])
-}
+app.get("/about",(request, response)=>{
+    response.json("Welcome to tech creek server")
+})
+
+
+app.get("/",(request, response)=>{
+    response.json("This is the home page")
+})
+
+
+
+
+
+
+app.get("/",(request, response)=>{
+    const myDetails = {
+        name: "Austin Sampson"
+        PhoneNumber: "09034482389"
+        email: "uettsyrtete.com"
+        address: "y45kkyyetetsj"
+    }
+
+    response.json(myDetails)
+})
